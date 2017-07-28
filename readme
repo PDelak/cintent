@@ -1,0 +1,3 @@
+cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON  ..
+cmake --build . --target cintent
+
