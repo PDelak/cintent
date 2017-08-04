@@ -22,8 +22,14 @@ int main(int argc, char** argv) {
     interp.loadFile(Lib);
 
   interp.AddIncludePath(".");
+
+  // TODO : build path is hardcoded for now
+  interp.AddIncludePath("/home/delak/cling/src/build/tools/clang/include");
+
   interp.process("#include <cstdio>");
+
   interp.process("printf(\"cintent a tool for metaprogramming\")");
 
   return 0;
+
 }
